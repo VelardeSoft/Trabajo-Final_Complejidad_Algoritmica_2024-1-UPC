@@ -9,9 +9,6 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
-        .In{
-            position: absolute; top: 400px; left: 40px;
-        }
         .Ingresar{
             color: white;
             background-color: #1C31AC;
@@ -30,9 +27,7 @@
         .titulo{
             text-align: center; color: darkblue; font-size: 30px;
         }
-        .img{
-            text-align: center;
-        }
+
         .text{
             border: 5px solid green; text-align: center; border-radios: 14px; margin-left: 400px; margin-right:400px;
             border-radius: 12px;
@@ -46,21 +41,34 @@
         .cc{
             border-radius: 8px; padding: 20px;
         }
+        .mapas {
+            margin-left: 300px;
+        }
+        .m {
+            width: 900px; height: 500px;
+        }
+        .img {
+            text-align: center;
+        }
+        .grafico {
+            width: 800px; height: 500px;
+        }
     </style>
 </head>
 <body>
     <img class="bandera" src="img/logo.png" alt="Bandera de Estados Unidos">
-
-    <div class="In">
-        <a class="Ingresar" href="img/mapas.html">Location</a>
-    </div>
-    <br><br>
-    <div class="titulo"> Analisis de crímenes en la ciudad de Angeles </div>
-    <br><br>
     <div class="img">
-        <img src="img/grafico.png" alt="Grafico de analisis Pandas">
+        <img class="grafico" src="img/grafico.png" alt="grafico">
     </div>
 
+    <br><br>
+    <div class="titulo"> Analisis de homicidio: L.A </div>
+    <br><br>
+
+    <div class="mapas">
+        <object class="m" type="text/html" data="mapas.html"></object>
+    </div>
+    <br> <br>
 
 </body>
 </html>
